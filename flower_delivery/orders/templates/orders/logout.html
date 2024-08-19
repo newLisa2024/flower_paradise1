@@ -1,0 +1,8 @@
+{% extends 'orders/base.html' %}
+
+{% block title %}Выход{% endblock %}
+
+{% block content %}
+<h2>Вы вышли из системы.</h2>
+<a href="{% url 'login' %}" class="btn btn-primary">Login again</a>
+{% endblock %}

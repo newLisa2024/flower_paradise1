@@ -1,0 +1,41 @@
+{% extends 'orders/base.html' %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1>Панель управления администратором</h1>
+
+        <!-- Секция для добавления нового товара -->
+        <div class="mb-4">
+            <a href="{% url 'add_product' %}" class="btn btn-success">Добавить товар</a>
+        </div>
+
+        <!-- Список товаров -->
+        <h2>Список товаров</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                    <th>Цена</th>
+                    <th>Изображение</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                <tr>
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.price }}</td>
+                    <td><img src="{{ product.image.url }}" alt="{{ product.name }}" width="50"></td>
+                    <td>
+                        <a href="{% url 'edit_product' product.id %}" class="btn btn-primary">Редактировать</a>
+                        <a href="{% url 'delete_product' product.id %}" class="btn btn-danger">Удалить</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+

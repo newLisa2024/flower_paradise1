@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+}
+.navbar-brand {
+    font-family: 'Georgia', serif; /* Вы можете изменить на любой другой шрифт */
+    font-size: 24px; /* Размер шрифта */
+    color: #2c3e50; /* Цвет текста */
+    font-weight: bold; /* Толщина шрифта */
+}
+
+.navbar-brand img {
+    margin-right: 15px; /* Отступ между логотипом и текстом */
+}
+.card {
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}

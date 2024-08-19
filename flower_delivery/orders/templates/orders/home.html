@@ -1,0 +1,26 @@
+{% extends 'orders/base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Добро пожаловать в Цветочный рай</h1>
+<p>Ознакомьтесь с широким выбором красивых букетов.</p>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="max-width: 50%; margin: 0 auto;">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'orders/img/2024-08-27_14-57-17.png' %}" class="d-block w-100" alt="Букет 1" style="height: 500px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'orders/img/2024-08-27_15-14-33.png' %}" class="d-block w-100" alt="Букет 2" style="height: 500px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'orders/img/2024-08-27_15-18-00.png' %}" class="d-block w-100" alt="Букет 3" style="height: 500px; object-fit: cover;">
+    </div>
+  </div>
+</div>
+<a href="{% url 'catalog' %}" class="btn btn-primary mt-4">Посмотреть каталог</a>
+{% endblock %}
+
+

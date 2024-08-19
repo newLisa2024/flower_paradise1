@@ -1,0 +1,36 @@
+{% extends 'orders/base.html' %}
+
+{% block title %}Корзина{% endblock %}
+
+{% block content %}
+<h1>Корзина</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Товар</th>
+            <th>Количество</th>
+            <th>Цена</th>
+            <th>Всего</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in items_in_cart %}
+        <tr>
+            <td>{{ item.product.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.product.price }}</td>
+            <td>{{ item.get_total_price }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="3">Итого:</td>
+            <td>{{ total_price }}</td>
+        </tr>
+    </tbody>
+</table>
+<a href="{% url 'catalog' %}" class="btn btn-secondary">Продолжить покупки</a>
+<a href="{% url 'order_checkout' %}" class="btn btn-primary">Оформить заказ</a>
+
+{% endblock %}
+
+

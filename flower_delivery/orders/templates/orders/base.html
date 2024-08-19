@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Изменено на русский язык -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Floral Paradise{% endblock %}</title>
+    {% load static %}
+    <!-- Подключение Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение пользовательских стилей -->
+    <link href="{% static 'orders/css/styles.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">
+        <img src="{% static 'orders/img/logo.png' %}" width="60" height="60" alt="Floral Paradise">
+        Floral Paradise
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'catalog' %}">Catalog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'checkout' %}">Checkout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'order_history' %}">Order History</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <form id="logout-form" method="post" action="{% url 'logout' %}" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="nav-link btn btn-link" style="padding: 0; border: none; cursor: pointer; color: #007bff;">Logout</button>
+                </form>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'register' %}">Register</a>
+            </li>
+            {% endif %}
+
+        </ul>
+    </div>
+    </nav>
+    <!-- Основной контент -->
+    <div class="container mt-4">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">&copy; 2024 Floral Paradise. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+<!-- Подключение JavaScript для Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Подключение пользовательских скриптов -->
+    <script src="{% static 'orders/js/scripts.js' %}"></script>
+</body>
+</html>
+
+
