@@ -4,11 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7832215c-24c4-4566-96c8-7e4539896235" name="Changes" comment="add all" />
+    <list default="true" id="7832215c-24c4-4566-96c8-7e4539896235" name="Changes" comment="add all">
+      <change afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flower_paradise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flower_paradise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_08_2024_20_07__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_08_2024_20_07__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -55,6 +78,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Лена\Desktop\Python\Программы для ДЗ\flower_paradise1\flower_delivery\orders" />
       <recent name="C:\Users\Лена\PycharmProjects\flower_paradise\flower_delivery\orders\static\orders\img" />
       <recent name="C:\Users\Лена\PycharmProjects\flower_paradise\flower_delivery\orders\static\orders" />
       <recent name="C:\Users\Лена\PycharmProjects\flower_paradise\flower_delivery\orders\static" />
@@ -116,8 +140,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
-        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+        <option value="bundled-python-sdk-0509580d9d50-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.14494.241" />
       </set>
     </attachedChunks>
   </component>
