@@ -2,7 +2,7 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, Updater, CallbackContext, Application
 from django.http import JsonResponse
 from django.conf import settings
-from ..models import Order
+from flower_delivery.orders.models import Order
 
 
 bot = Application.builder().token(settings.TELEGRAM_BOT_TOKEN).build()
