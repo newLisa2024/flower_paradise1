@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7832215c-24c4-4566-96c8-7e4539896235" name="Changes" comment="add all">
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flower_delivery/orders/telegram_bot/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower_delivery/telegram_bot/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/flower_delivery/telegram_bot/bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +66,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Лена\Desktop\Python\Программы для ДЗ\flower_paradise1\flower_delivery" />
       <recent name="C:\Users\Лена\Desktop\Python\Программы для ДЗ\flower_paradise1\flower_delivery\orders" />
       <recent name="C:\Users\Лена\PycharmProjects\flower_paradise\flower_delivery\orders\static\orders\img" />
       <recent name="C:\Users\Лена\PycharmProjects\flower_paradise\flower_delivery\orders\static\orders" />

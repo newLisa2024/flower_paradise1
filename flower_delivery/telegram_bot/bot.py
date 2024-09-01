@@ -1,3 +1,6 @@
+import sys
+sys.path.append("..")
+
 from telegram import Update, Bot
 from telegram.ext import CommandHandler, Updater, CallbackContext, Application
 from django.http import JsonResponse
