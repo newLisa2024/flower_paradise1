@@ -23,18 +23,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-m_g384(v7*usa#$dbg@4z%txg^lb0r%fk@4z6swe6buk7vl4sd'
 
-TELEGRAM_BOT_TOKEN = '7267176478:AAERtWIIMgBxSW3-qp67A3FUr0EwE0eMPow'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '0b9e-193-235-147-60.ngrok-free.app']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'orders',
-    'telegram_bot',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

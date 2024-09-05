@@ -1,8 +1,14 @@
 from django.conf import settings
 from django.conf.urls.static import static
-from django.urls import path
+from django.urls import path, include
 from django.contrib.auth import views as auth_views
+from rest_framework.routers import DefaultRouter
 from . import views
+from .views import ProductViewSet, OrderViewSet
+
+router = DefaultRouter()
+router.register(r'products', ProductViewSet)
+router.register(r'orders', OrderViewSet)
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -18,7 +24,10 @@ urlpatterns = [
     path('add-product/', views.add_product, name='add_product'),
     path('edit-product/<int:product_id>/', views.edit_product, name='edit_product'),
     path('delete-product/<int:product_id>/', views.delete_product, name='delete_product'),
+    path('api/', include(router.urls)),  # Added the API routes here
+    path('api/orders/user/', OrderViewSet.as_view({'get': 'user_orders'})),  # Добавляем путь для получения заказов
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
 
 
