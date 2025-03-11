@@ -4,6 +4,8 @@ import os
 import sys
 
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'flower_delivery.settings')
+
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'flower_delivery.settings')
